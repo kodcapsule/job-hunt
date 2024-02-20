@@ -1,7 +1,7 @@
 import React from "react";
 
-function Skill() {
-  return <p className=" skill-style transition-element">JavaScript</p>;
+function Skill({ language }) {
+  return <p className=" skill-style transition-element">{language}</p>;
 }
 
 export default Skill;

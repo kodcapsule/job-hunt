@@ -1,16 +1,20 @@
-function Updates({ featured = false }) {
+function Updates({ featured, new_job }) {
   return (
     <div className="updates flex flex-row gap-2">
-      <span className=" px-4 py-1 rounded-full text-center font-semibold text-light-grayish-cyan-ftb text-sm  bg-primary-dark-cyan uppercase  ">
+      <span
+        className={`px-4 py-1 rounded-full text-center font-semibold text-light-grayish-cyan-ftb text-sm bg-primary-dark-cyan uppercase ${
+          new_job ? "" : "hidden"
+        }`}
+      >
         New!
       </span>
-      <span
+      <p
         className={`px-4 py-1 rounded-full text-center font-bold text-light-grayish-cyan-ftb text-sm bg-very-dark-grayish-cyan uppercase ${
-          !featured && "hidden"
+          featured ? "" : "hidden"
         }`}
       >
         Featured
-      </span>
+      </p>
     </div>
   );
 }
