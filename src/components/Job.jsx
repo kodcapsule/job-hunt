@@ -26,13 +26,13 @@ function Job({ job }) {
           {job.job_tittle}
         </h3>
 
-        <JobDescription />
+        <JobDescription job_details={job.job_details} />
       </div>
       <div className="bottom flex flex-wrap mt-5 lg:mt-0 items-center gap-5 lg:justify-center lg:flex-nowrap lg:gap-2 ">
         <Skill language={job.role} />
         <Skill language={job.level} />
         {job.Languages.map((language) => (
-          <Skill language={language} />
+          <Skill language={language} key={language} />
         ))}
       </div>
     </article>
