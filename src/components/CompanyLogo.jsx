@@ -1,6 +1,4 @@
-import logo from "../assets/photosnap.svg";
-
-function CompanyLogo() {
+function CompanyLogo({ logo }) {
   return <img src={logo} alt=" company logo" />;
 }
 

@@ -2,7 +2,7 @@ export const data = [
   {
     company: "Photosnap",
     job_tittle: "Senior Frontend Developer",
-    // logo: "../../assets/photosnap.svg",
+    logo: "src/assets/photosnap.svg",
     new_job: true,
     featured: true,
     job_details: {
@@ -18,7 +18,7 @@ export const data = [
   {
     company: "Manage",
     job_tittle: "Fullstack Developer",
-    // logo: "../../assets/photosnap.svg",
+    logo: "src/assets/manage.svg",
     new_job: true,
     featured: true,
     job_details: {
@@ -34,7 +34,7 @@ export const data = [
   {
     company: " Account",
     job_tittle: "Junior Frontend Developer",
-    // logo: "../../assets/photosnap.svg",
+    logo: "src/assets/account.svg",
     new_job: true,
     featured: false,
     job_details: {
@@ -50,7 +50,7 @@ export const data = [
   {
     company: "MyHome",
     job_tittle: "Junior Frontend Developer",
-    // logo: "../../assets/photosnap.svg",
+    logo: "src/assets/myhome.svg",
     new_job: false,
     featured: false,
     job_details: {
@@ -66,7 +66,7 @@ export const data = [
   {
     company: "Loop Studios",
     job_tittle: " Software Engineer",
-    // logo: "../../assets/photosnap.svg",
+    logo: "src/assets/loop-studios.svg",
     new_job: false,
     featured: false,
     job_details: {
@@ -82,7 +82,7 @@ export const data = [
   {
     company: "FaceIt",
     job_tittle: "Junior Backend Developer ",
-    // logo: "../../assets/photosnap.svg",
+    logo: "src/assets/faceit.svg",
     new_job: false,
     featured: false,
     job_details: {
@@ -98,7 +98,7 @@ export const data = [
   {
     company: "Shortly",
     job_tittle: "Junior Developer",
-    // logo: "../../assets/photosnap.svg",
+    logo: "src/assets/shortly.svg",
     new_job: false,
     featured: false,
     job_details: {
@@ -114,7 +114,7 @@ export const data = [
   {
     company: "Insure ",
     job_tittle: "Junior Frontend Developer",
-    // logo: "../../assets/photosnap.svg",
+    logo: "src/assets/insure.svg",
     new_job: false,
     featured: false,
     job_details: {
@@ -130,7 +130,7 @@ export const data = [
   {
     company: "Eyecam Co.",
     job_tittle: "Full Stack Engineer",
-    // logo: "../../assets/photosnap.svg",
+    logo: "src/assets/eyecam-co.svg",
     new_job: false,
     featured: false,
     job_details: {
@@ -146,7 +146,7 @@ export const data = [
   {
     company: "The Air Filter Company ",
     job_tittle: "Front-end Dev",
-    // logo: "../../assets/photosnap.svg",
+    logo: "src/assets/the-air-filter-company.svg",
     new_job: false,
     featured: false,
     job_details: {
