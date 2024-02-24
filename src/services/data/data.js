@@ -154,8 +154,8 @@ export const data = [
       job_type: "Part Time",
       location: "Worldwide",
     },
-    role: " Frontend",
-    level: " Junior",
+    role: "Frontend",
+    level: "Junior",
     Languages: ["JavaScript", "React", "Saas"],
   },
 ];
