@@ -33,6 +33,9 @@ function Job({ job }) {
       <div className="bottom flex flex-wrap mt-5 lg:mt-0 items-center gap-5 lg:justify-center lg:flex-nowrap lg:gap-2 ">
         <Skill language={job.role} />
         <Skill language={job.level} />
+        {job.tools.map((tool) => (
+          <Skill language={tool} key={tool} />
+        ))}
         {job.languages.map((language) => (
           <Skill language={language} key={language} />
         ))}

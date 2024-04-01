@@ -1,15 +1,14 @@
 import { useState, useEffect } from "react";
 
 import Job from "./Job";
-import data from "../services/data/data.json";
+// import data from "../services/data/data.json";
 import SearchBar from "./SearchBar";
 
-function MainContent() {
-  const [jobs, setJobs] = useState("");
+import useLoadData from "../hooks/useLoadData";
 
-  useEffect(() => {
-    setJobs(data);
-  }, []);
+function MainContent() {
+  const jobs = useLoadData();
+
   return (
     <main className="bg-light-grayish-cyan-background  relative">
       <div className="search absolute  right-[30%] -top-8   items-center w-5/12 ">
