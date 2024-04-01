@@ -1,5 +1,4 @@
 import Skill from "./Skill";
-
 import JobDescription from "./JobDescription";
 import CompanyLogo from "./CompanyLogo";
 import Updates from "./Updates";
@@ -20,18 +19,21 @@ function Job({ job }) {
           <h2 className=" text-primary-dark-cyan text-lg font-bold capitalize ">
             {job.company}
           </h2>
-          {<Updates featured={job.featured} new_job={job.new_job} />}
+          {<Updates featured={job.featured} new_job={job.new} />}
         </div>
         <h3 className=" job-tittle text-very-dark-grayish-cyan text-lg font-bold px-2 hover:text-primary-dark-cyan   transition-element">
-          {job.job_tittle}
+          {job.position}
         </h3>
-
-        <JobDescription job_details={job.job_details} />
+        <JobDescription
+          postedAt={job.postedAt}
+          contract={job.contract}
+          location={job.location}
+        />
       </div>
       <div className="bottom flex flex-wrap mt-5 lg:mt-0 items-center gap-5 lg:justify-center lg:flex-nowrap lg:gap-2 ">
         <Skill language={job.role} />
         <Skill language={job.level} />
-        {job.Languages.map((language) => (
+        {job.languages.map((language) => (
           <Skill language={language} key={language} />
         ))}
       </div>
