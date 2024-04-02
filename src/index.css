@@ -28,3 +28,15 @@ body {
 .transition-element {
   @apply transition-all duration-300 ease-in-out delay-75 hover:cursor-pointer;
 }
+
+.mainContent {
+  @apply flex flex-col gap-12 lg:gap-6 pt-12  lg:pb-10 px-4 md:pt-4 items-center;
+}
+
+.job__top__section {
+  @apply flex flex-col mt-5 lg:mt-0 gap-2 lg:gap-2 border-b-2 pb-3 lg:p-0 lg:border-0 lg:ml-24 lg:w-9/12;
+}
+
+.job__bottom__section {
+  @apply flex flex-wrap mt-5 lg:mt-0 items-center gap-5 lg:justify-center lg:flex-nowrap lg:gap-2;
+}

@@ -11,7 +11,7 @@ function Job({ job }) {
         "border-l-8 border-primary-dark-cyan lg:flex lg:justify-between"
       }`}
     >
-      <div className="top  flex flex-col mt-5 lg:mt-0 gap-2 lg:gap-2 border-b-2 pb-3 lg:p-0 lg:border-0 lg:ml-24 lg:w-9/12 ">
+      <div className="job__top__section">
         <div className="company-logo absolute -top-8 left-3 w-20 h-20 lg:top-4 lg:left-2">
           <CompanyLogo logo={job.logo} />
         </div>
@@ -30,7 +30,7 @@ function Job({ job }) {
           location={job.location}
         />
       </div>
-      <div className="bottom flex flex-wrap mt-5 lg:mt-0 items-center gap-5 lg:justify-center lg:flex-nowrap lg:gap-2 ">
+      <div className="job__bottom__section ">
         <Skill language={job.role} />
         <Skill language={job.level} />
         {job.tools.map((tool) => (

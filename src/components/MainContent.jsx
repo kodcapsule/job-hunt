@@ -1,9 +1,5 @@
-import { useState, useEffect } from "react";
-
 import Job from "./Job";
-// import data from "../services/data/data.json";
 import SearchBar from "./SearchBar";
-
 import useLoadData from "../hooks/useLoadData";
 
 function MainContent() {
@@ -16,7 +12,7 @@ function MainContent() {
       </div>
 
       {jobs ? (
-        <div className="mainContent flex flex-col gap-12 lg:gap-6 pt-12  lg:pb-10 px-4 md:pt-4 items-center container-customized ">
+        <div className="mainContent container-customized ">
           {jobs.map((job) => (
             <Job job={job} key={job.id} />
           ))}
